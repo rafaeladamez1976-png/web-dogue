@@ -1,5 +1,5 @@
 /* ============================================================
-   DOGUÉ COMMUNITY HUB — Main Script
+   DOGUE COMMUNITY HUB — Main Script
    Navbar scroll behavior, mobile menu, smooth interactions
    ============================================================ */
 
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const img = document.createElement('img');
       img.src = poster;
-      img.alt = 'DOGUÉ Community Hub — Elegancia canina';
+      img.alt = 'DOGUE Community Hub — Elegancia canina';
       img.className = 'hero__poster';
       img.loading = 'eager';
       wrapper.appendChild(img);
