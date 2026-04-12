@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DOGUÉ Community Hub — La comunidad premium para dueños y mascotas que comparten pasión por la elegancia. Únete al movimiento luxury pet lifestyle.">
+  <meta name="keywords" content="comunidad perros, mascotas premium, lifestyle canino, dog couture, elegancia canina">
+  <meta name="author" content="DOGUÉ Community Hub">
+  <meta property="og:title" content="DOGUÉ Community Hub — Donde el Estilo es un Estilo de Vida">
+  <meta property="og:description" content="La comunidad premium para dueños y mascotas que comparten pasión por la elegancia.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#1B2A4A">
+  <title>DOGUÉ Community Hub — Donde el Estilo es un Estilo de Vida</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal">
+    <!-- Logo -->
+    <a href="/" class="navbar__logo" id="logo" aria-label="DOGUÉ — Ir al inicio">
+      <span class="navbar__logo-text">DOGUÉ</span>
+    </a>
+
+    <!-- Desktop Menu -->
+    <ul class="navbar__menu" id="nav-menu">
+      <li><a href="comunidad.html" class="navbar__menu-item" id="nav-comunidad">Comunidad</a></li>
+      <li><a href="binomios.html" class="navbar__menu-item" id="nav-binomios">Binomios</a></li>
+      <li><a href="eventos.html" class="navbar__menu-item" id="nav-eventos">Eventos</a></li>
+      <li><a href="tienda.html" class="navbar__menu-item" id="nav-tienda">Tienda</a></li>
+      <li><a href="nosotros.html" class="navbar__menu-item" id="nav-nosotros">Nosotros</a></li>
+    </ul>
+
+    <!-- CTA -->
+    <div class="navbar__cta">
+      <button class="btn-cta-nav" id="nav-cta-join">ÚNETE</button>
+    </div>
+
+    <!-- Hamburger (mobile) -->
+    <button class="navbar__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Overlay -->
+  <div class="navbar__mobile-overlay" id="mobile-nav" aria-hidden="true">
+    <a href="comunidad.html" class="navbar__menu-item" data-mobile-link>Comunidad</a>
+    <a href="binomios.html" class="navbar__menu-item" data-mobile-link>Binomios</a>
+    <a href="eventos.html" class="navbar__menu-item" data-mobile-link>Eventos</a>
+    <a href="tienda.html" class="navbar__menu-item" data-mobile-link>Tienda</a>
+    <a href="nosotros.html" class="navbar__menu-item" data-mobile-link>Nosotros</a>
+    <button class="btn-cta-nav" data-mobile-link>ÚNETE</button>
+  </div>
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section class="hero" id="hero" aria-label="Sección principal">
+    <!-- Video / Poster Background -->
+    <div class="hero__video-wrapper">
+      <video
+        class="hero__video"
+        id="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        poster="assets/hero-poster.png"
+      >
+        <!-- Replace with actual video file -->
+        <!-- <source src="assets/hero-video.mp4" type="video/mp4"> -->
+      </video>
+    </div>
+
+    <!-- Overlay Gradient -->
+    <div class="hero__overlay"></div>
+
+    <!-- Decorative Lines -->
+    <div class="hero__deco-line hero__deco-line--left" aria-hidden="true"></div>
+    <div class="hero__deco-line hero__deco-line--right" aria-hidden="true"></div>
+    <div class="hero__deco-line hero__deco-line--top" aria-hidden="true"></div>
+    <div class="hero__deco-line hero__deco-line--bottom" aria-hidden="true"></div>
+
+    <!-- Hero Content -->
+    <div class="hero__content">
+      <p class="hero__subtitle">Donde el estilo es un estilo de vida</p>
+
+      <h1 class="hero__headline">
+        <span class="hero__headline-word--accent">Dogué</span>
+        <span>Community Hub</span>
+      </h1>
+
+      <p class="hero__description">
+        La comunidad premium para dueños y mascotas que comparten 
+        pasión por la elegancia
+      </p>
+
+      <div class="hero__buttons">
+        <a href="#comunidad" class="btn-hero btn-hero--primary" id="hero-cta-explore">
+          Explorar Comunidad
+        </a>
+        <a href="#binomios" class="btn-hero btn-hero--secondary" id="hero-cta-binomios">
+          Ver Binomios
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="hero__scroll-indicator" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero__scroll-mouse">
+        <div class="hero__scroll-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BINOMIOS DESTACADOS
+       ============================================================ -->
+  <section class="binomios-destacados" id="binomios" aria-label="Binomios Destacados">
+    <div class="binomios-destacados__container">
+      <div class="binomios-destacados__header">
+        <span class="binomios-destacados__subtitle fade-in-element">— NUESTRA COMUNIDAD —</span>
+        <h2 class="binomios-destacados__title fade-in-element">Los Binomios del Mes</h2>
+      </div>
+
+      <div class="binomios-grid">
+        <!-- Card 1 -->
+        <div class="binomios-card fade-in-element" style="--anim-delay: 0.1s;">
+          <div class="binomios-card__image-wrapper">
+            <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=600&h=600" alt="Isabella & Cartier" class="binomios-card__image" loading="lazy">
+            <div class="binomios-card__breed-chip">Afgano</div>
+          </div>
+          <div class="binomios-card__content">
+            <h3 class="binomios-card__name">Isabella & Cartier</h3>
+            <div class="binomios-card__hover-content">
+              <p class="binomios-card__description">Un vínculo forjado en la elegancia. Cartier y su dueña comparten su pasión por las pasarelas caninas de alta costura.</p>
+              <button class="btn-ver-perfil">Ver Perfil</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="binomios-card fade-in-element" style="--anim-delay: 0.25s;">
+          <div class="binomios-card__image-wrapper">
+            <img src="https://images.unsplash.com/photo-1597595565147-160dd8690bba?auto=format&fit=crop&q=80&w=600&h=600" alt="Arthur & Winston" class="binomios-card__image" loading="lazy">
+            <div class="binomios-card__breed-chip">Gran Danés</div>
+          </div>
+          <div class="binomios-card__content">
+            <h3 class="binomios-card__name">Arthur & Winston</h3>
+            <div class="binomios-card__hover-content">
+              <p class="binomios-card__description">Tradición y porte distinguido. Winston es el compañero perfecto en cada viaje por la campiña inglesa.</p>
+              <button class="btn-ver-perfil">Ver Perfil</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="binomios-card fade-in-element" style="--anim-delay: 0.4s;">
+          <div class="binomios-card__image-wrapper">
+            <img src="https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?auto=format&fit=crop&q=80&w=600&h=600" alt="Eleanor & Coco" class="binomios-card__image" loading="lazy">
+            <div class="binomios-card__breed-chip">Caniche Toy</div>
+          </div>
+          <div class="binomios-card__content">
+            <h3 class="binomios-card__name">Eleanor & Coco</h3>
+            <div class="binomios-card__hover-content">
+              <p class="binomios-card__description">La viva imagen del chic parisino. Coco redefine el concepto de lifestyle de lujo en formato petite.</p>
+              <button class="btn-ver-perfil">Ver Perfil</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="binomios-destacados__footer fade-in-element" style="--anim-delay: 0.6s;">
+        <a href="#binomios-all" class="btn-outline-navy">VER TODOS LOS BINOMIOS</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       LIFESTYLE SPLIT (SECCIÓN A)
+       ============================================================ -->
+  <section class="lifestyle-split" id="nosotros" aria-label="Nuestra Filosofía">
+    <div class="lifestyle-split__image-wrapper fade-in-element" style="--anim-delay: 0s;">
+      <img src="https://images.unsplash.com/photo-1544568100-847a948585b9?auto=format&fit=crop&q=80&w=1000&h=1200" alt="Perro elegante de la comunidad Dogué" class="lifestyle-split__image" loading="lazy">
+    </div>
+    <div class="lifestyle-split__content fade-in-element" style="--anim-delay: 0.2s;">
+      <div class="lifestyle-split__icon-paw" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.9961 11.2338C13.6558 11.2338 15.0061 9.88874 15.0061 8.23565C15.0061 6.58257 13.6558 5.23755 11.9961 5.23755C10.3364 5.23755 8.98608 6.58257 8.98608 8.23565C8.98608 9.88874 10.3364 11.2338 11.9961 11.2338Z" fill="var(--gold)"/>
+          <path d="M6.08272 10.7424C7.30064 10.7424 8.28827 9.75825 8.28827 8.54471C8.28827 7.33116 7.30064 6.34705 6.08272 6.34705C4.86479 6.34705 3.87717 7.33116 3.87717 8.54471C3.87717 9.75825 4.86479 10.7424 6.08272 10.7424Z" fill="var(--gold)"/>
+          <path d="M17.913 10.7424C19.1309 10.7424 20.1185 9.75825 20.1185 8.54471C20.1185 7.33116 19.1309 6.34705 17.913 6.34705C16.695 6.34705 15.7074 7.33116 15.7074 8.54471C15.7074 9.75825 16.695 10.7424 17.913 10.7424Z" fill="var(--gold)"/>
+          <path d="M12.0022 12.3995C9.72144 12.3995 7.64998 13.5658 6.44474 15.4243C5.708 16.5593 5.48529 17.8284 5.92211 18.9139C6.4172 20.1479 7.74903 20.8931 9.17173 20.8931C9.69762 20.8931 10.228 20.7303 10.7136 20.3547L11.5369 19.7267C11.808 19.5199 12.1963 19.5199 12.4674 19.7267L13.2907 20.3547C13.7763 20.7303 14.3067 20.8931 14.8326 20.8931C16.2553 20.8931 17.5872 20.1479 18.0822 18.9139C18.5191 17.8284 18.2963 16.5593 17.5596 15.4243C16.3544 13.5658 14.2829 12.3995 12.0022 12.3995Z" fill="var(--gold)"/>
+        </svg>
+      </div>
+      <h2 class="lifestyle-split__title">Una comunidad construida sobre el amor y el estilo</h2>
+      
+      <ul class="lifestyle-split__benefits">
+        <li>
+          <span class="lifestyle-split__check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </span>
+          <p>Networking exclusivo para ti y tu mascota</p>
+        </li>
+        <li>
+          <span class="lifestyle-split__check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </span>
+          <p>Acceso a colecciones cápsula de alta costura</p>
+        </li>
+        <li>
+          <span class="lifestyle-split__check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </span>
+          <p>Invitaciones VIP a eventos premium y catas</p>
+        </li>
+      </ul>
+
+      <a href="#filosofia" class="btn-hero btn-hero--primary lifestyle-split__btn">
+        CONOCE NUESTRA FILOSOFÍA
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       STATS BAR (SECCIÓN B)
+       ============================================================ -->
+  <section class="stats-bar" aria-label="Estadísticas de la Comunidad">
+    <div class="stats-bar__container">
+      <div class="stats-bar__item fade-in-element" style="--anim-delay: 0.1s;">
+        <span class="stats-bar__number">2.400+</span>
+        <span class="stats-bar__label">Binomios activos</span>
+      </div>
+      <div class="stats-bar__divider"></div>
+      <div class="stats-bar__item fade-in-element" style="--anim-delay: 0.2s;">
+        <span class="stats-bar__number">38</span>
+        <span class="stats-bar__label">Razas representadas</span>
+      </div>
+      <div class="stats-bar__divider"></div>
+      <div class="stats-bar__item fade-in-element" style="--anim-delay: 0.3s;">
+        <span class="stats-bar__number">120</span>
+        <span class="stats-bar__label">Eventos realizados</span>
+      </div>
+      <div class="stats-bar__divider"></div>
+      <div class="stats-bar__item fade-in-element" style="--anim-delay: 0.4s;">
+        <span class="stats-bar__number">98%</span>
+        <span class="stats-bar__label">Satisfacción</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MEMBRESÍAS (SECCIÓN C)
+       ============================================================ -->
+  <section class="membresias" id="tienda" aria-label="Planes de Membresía">
+    <div class="membresias__container">
+      <div class="membresias__header fade-in-element">
+        <h2 class="membresias__title">Elige tu Experiencia DOGUÉ</h2>
+      </div>
+
+      <div class="membresias__grid">
+        <!-- PLAN BÁSICO -->
+        <div class="membresia-card membresia-card--basico fade-in-element" style="--anim-delay: 0.1s;">
+          <h3 class="membresia-card__name">BÁSICO</h3>
+          <div class="membresia-card__price">
+            <span class="membresia-card__currency">€</span>
+            <span class="membresia-card__amount">20</span>
+            <span class="membresia-card__period">/mes</span>
+          </div>
+          <ul class="membresia-card__features">
+            <li>Acceso a foro de la comunidad</li>
+            <li>Boletín mensual editorial</li>
+            <li>Descuento 5% en boutiques</li>
+            <li>Invitación a 1 evento virtual</li>
+            <li>Directorio de expertos básico</li>
+          </ul>
+          <button class="btn-membresia btn-membresia--outline">Suscribirse</button>
+        </div>
+
+        <!-- PLAN PREMIUM -->
+        <div class="membresia-card membresia-card--premium fade-in-element" style="--anim-delay: 0.25s;">
+          <div class="membresia-card__badge">MÁS POPULAR</div>
+          <h3 class="membresia-card__name">PREMIUM</h3>
+          <div class="membresia-card__price">
+            <span class="membresia-card__currency">€</span>
+            <span class="membresia-card__amount">50</span>
+            <span class="membresia-card__period">/mes</span>
+          </div>
+          <ul class="membresia-card__features">
+            <li>Acceso total a la comunidad</li>
+            <li>Revista impresa trimestral</li>
+            <li>Descuento 15% en boutiques</li>
+            <li>Meetups locales con prioridad</li>
+            <li>Directorio completo de coaches</li>
+          </ul>
+          <button class="btn-membresia btn-membresia--navy">Suscribirse</button>
+        </div>
+
+        <!-- PLAN ÉLITE -->
+        <div class="membresia-card membresia-card--elite fade-in-element" style="--anim-delay: 0.4s;">
+          <h3 class="membresia-card__name">ÉLITE</h3>
+          <div class="membresia-card__price">
+            <span class="membresia-card__currency">€</span>
+            <span class="membresia-card__amount">120</span>
+            <span class="membresia-card__period">/mes</span>
+          </div>
+          <ul class="membresia-card__features">
+            <li>Acceso a club privado Dogué</li>
+            <li>Cápsulas limitadas de diseño</li>
+            <li>Personal Shopper canino</li>
+            <li>Eventos exclusivos VIP</li>
+            <li>Concierge veterinario 24/7</li>
+          </ul>
+          <button class="btn-membresia btn-membresia--gold">Suscribirse</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EVENTOS
+       ============================================================ -->
+  <section class="eventos" id="eventos" aria-label="Próximos Eventos">
+    <div class="eventos__container">
+      <div class="eventos__header fade-in-element">
+        <h2 class="eventos__title">PRÓXIMOS EVENTOS</h2>
+      </div>
+
+      <div class="eventos__lista">
+        <!-- Evento 1 -->
+        <article class="evento-card fade-in-element" style="--anim-delay: 0.1s;">
+          <div class="evento-card__fecha">
+            <span class="evento-card__dia">15</span>
+            <span class="evento-card__mes">MAY</span>
+          </div>
+          <div class="evento-card__info">
+            <h3 class="evento-card__nombre">Dogué Fashion Walk</h3>
+            <span class="evento-card__lugar">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Madrid
+            </span>
+            <p class="evento-card__desc">Un paseo exclusivo por el Barrio de Salamanca luciendo la última temporada de accesorios premium.</p>
+          </div>
+          <div class="evento-card__accion">
+            <button class="btn-reservar">RESERVAR PLAZA</button>
+          </div>
+        </article>
+
+        <!-- Evento 2 -->
+        <article class="evento-card fade-in-element" style="--anim-delay: 0.2s;">
+          <div class="evento-card__fecha">
+            <span class="evento-card__dia">28</span>
+            <span class="evento-card__mes">MAY</span>
+          </div>
+          <div class="evento-card__info">
+            <h3 class="evento-card__nombre">Encuentro Binomios</h3>
+            <span class="evento-card__lugar">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Barcelona
+            </span>
+            <p class="evento-card__desc">Una jornada de networking y cata degustación para dueños y mascotas en formato brunch de lujo.</p>
+          </div>
+          <div class="evento-card__accion">
+            <button class="btn-reservar">RESERVAR PLAZA</button>
+          </div>
+        </article>
+
+        <!-- Evento 3 -->
+        <article class="evento-card fade-in-element" style="--anim-delay: 0.3s;">
+          <div class="evento-card__fecha">
+            <span class="evento-card__dia">12</span>
+            <span class="evento-card__mes">JUN</span>
+          </div>
+          <div class="evento-card__info">
+            <h3 class="evento-card__nombre">Workshop Fotografía Premium</h3>
+            <span class="evento-card__lugar">
+              <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Bilbao
+            </span>
+            <p class="evento-card__desc">Aprende a capturar la esencia editorial de tu mascota con los fotógrafos caninos del momento.</p>
+          </div>
+          <div class="evento-card__accion">
+            <button class="btn-reservar">RESERVAR PLAZA</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       NEWSLETTER
+       ============================================================ -->
+  <section class="newsletter" aria-label="Suscripción a Newsletter">
+    <div class="newsletter__container fade-in-element">
+      <h2 class="newsletter__title">Únete a nuestra newsletter exclusiva</h2>
+      <form class="newsletter__form" action="#" method="POST" onsubmit="event.preventDefault();">
+        <label for="email-news" class="sr-only">Correo electrónico</label>
+        <input type="email" id="email-news" class="newsletter__input" placeholder="Tu correo electrónico" required>
+        <button type="submit" class="btn-suscribir">SUSCRIBIRME</button>
+      </form>
+      <p class="newsletter__legal">Solo contenido premium. Sin spam.</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__logo-container">
+        <a href="/" class="footer__logo">DOGUÉ</a>
+      </div>
+
+      <div class="footer__grid">
+        <div class="footer__col">
+          <h4 class="footer__col-title">COMUNIDAD</h4>
+          <ul class="footer__links">
+            <li><a href="#binomios">Binomios</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#tienda">Membresías</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">SERVICIOS</h4>
+          <ul class="footer__links">
+            <li><a href="#">Directorio de Partners</a></li>
+            <li><a href="#">Blog Editorial</a></li>
+            <li><a href="#">Boutique Online</a></li>
+            <li><a href="#">Concierge</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">LEGAL</h4>
+          <ul class="footer__links">
+            <li><a href="#">Aviso Legal</a></li>
+            <li><a href="#">Política de Privacidad</a></li>
+            <li><a href="#">Política de Cookies</a></li>
+            <li><a href="#">Términos y Condiciones</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__col--social">
+          <h4 class="footer__col-title">SÍGUENOS</h4>
+          <div class="footer__socials">
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5v3a3 3 0 0 1-3-3"></path></svg>
+            </a>
+            <a href="#" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" stroke="none"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.951-7.252 4.182 0 7.439 2.981 7.439 6.959 0 4.156-2.618 7.502-6.25 7.502-1.22 0-2.368-.634-2.763-1.385l-.752 2.871c-.272 1.039-1.009 2.34-1.503 3.132 1.211.373 2.508.575 3.847.575 6.621 0 11.987-5.366 11.987-11.985C24.004 5.367 18.638 0 12.017 0z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__copyright">
+        &copy; 2025 DOGUÉ Community Hub. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
