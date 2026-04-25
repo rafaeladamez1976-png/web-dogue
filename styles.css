@@ -645,26 +645,26 @@ button {
 }
 
 /* ============================================================
-   BINOMIOS DESTACADOS (Featured Pairs)
+   equipos DESTACADOS (Featured Pairs)
    ============================================================ */
-.binomios-destacados {
+.equipos-destacados {
   background-color: var(--cream);
   padding: clamp(4rem, 8vw, 8rem) clamp(1.5rem, 4vw, 4rem);
   color: var(--navy-deep);
   position: relative;
 }
 
-.binomios-destacados__container {
+.equipos-destacados__container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.binomios-destacados__header {
+.equipos-destacados__header {
   text-align: center;
   margin-bottom: clamp(3rem, 6vw, 5rem);
 }
 
-.binomios-destacados__subtitle {
+.equipos-destacados__subtitle {
   display: block;
   font-family: var(--font-body);
   font-size: 0.75rem;
@@ -675,7 +675,7 @@ button {
   text-transform: uppercase;
 }
 
-.binomios-destacados__title {
+.equipos-destacados__title {
   font-family: var(--font-display);
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 500;
@@ -684,7 +684,7 @@ button {
   margin: 0;
 }
 
-.binomios-grid {
+.equipos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: clamp(1.5rem, 3vw, 2.5rem);
@@ -692,7 +692,7 @@ button {
 }
 
 /* Card Styles */
-.binomios-card {
+.equipos-card {
   background: var(--white);
   border: 1px solid rgba(184, 148, 63, 0.2);
   border-radius: 4px;
@@ -706,33 +706,33 @@ button {
   flex-direction: column;
 }
 
-.binomios-card:hover {
+.equipos-card:hover {
   transform: translateY(-5px) scale(1.02);
   box-shadow: 0 20px 50px rgba(27, 42, 74, 0.15);
   border-color: rgba(184, 148, 63, 0.5);
 }
 
 /* Image Wrapper (Square) */
-.binomios-card__image-wrapper {
+.equipos-card__image-wrapper {
   position: relative;
   width: 100%;
   aspect-ratio: 1 / 1;
   overflow: hidden;
 }
 
-.binomios-card__image {
+.equipos-card__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform var(--transition-slow) var(--ease-luxury);
 }
 
-.binomios-card:hover .binomios-card__image {
+.equipos-card:hover .equipos-card__image {
   transform: scale(1.05);
 }
 
 /* Overlay gradient for name legibility */
-.binomios-card__image-wrapper::after {
+.equipos-card__image-wrapper::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -746,7 +746,7 @@ button {
 }
 
 /* Breed Chip */
-.binomios-card__breed-chip {
+.equipos-card__breed-chip {
   position: absolute;
   top: 1.25rem;
   right: 1.25rem;
@@ -766,7 +766,7 @@ button {
 }
 
 /* Card Content Area */
-.binomios-card__content {
+.equipos-card__content {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -779,7 +779,7 @@ button {
   height: 100%;
 }
 
-.binomios-card__name {
+.equipos-card__name {
   font-family: var(--font-display);
   font-size: 1.8rem;
   font-weight: 400;
@@ -791,7 +791,7 @@ button {
 }
 
 /* Hidden Content on Hover */
-.binomios-card__hover-content {
+.equipos-card__hover-content {
   opacity: 0;
   transform: translateY(20px);
   max-height: 0;
@@ -803,18 +803,18 @@ button {
   margin-top: 1rem;
 }
 
-.binomios-card:hover .binomios-card__name {
+.equipos-card:hover .equipos-card__name {
   transform: translateY(0);
 }
 
-.binomios-card:hover .binomios-card__hover-content {
+.equipos-card:hover .equipos-card__hover-content {
   opacity: 1;
   transform: translateY(0);
   max-height: 200px;
   pointer-events: auto;
 }
 
-.binomios-card__description {
+.equipos-card__description {
   font-family: var(--font-body);
   font-size: 0.85rem;
   line-height: 1.6;
@@ -841,7 +841,7 @@ button {
 }
 
 /* Footer Button */
-.binomios-destacados__footer {
+.equipos-destacados__footer {
   text-align: center;
 }
 
